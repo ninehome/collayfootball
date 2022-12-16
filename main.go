@@ -4,10 +4,17 @@ import (
 	"fmt"
 	"github.com/gocolly/colly/v2"
 	"strings"
+	"time"
 )
 
 func main() {
-	DouBanBook()
+
+	// ctrl +alt + l   // json 代码格式化
+	//时间戳 to 时间
+	tm := time.Unix(1671242400, 0)
+	fmt.Println(tm.Format("2006-01-02 15:04:05")) //2018-07-11 15:10:19
+
+	//DouBanBook()
 }
 
 //	func main() {

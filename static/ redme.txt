@@ -1,0 +1,24 @@
+
+
+getList --->
+
+ mg  当前页面显示的盘口数量
+  tms   这场比赛的盘口数量
+ lg  比赛 所属的赛事 ， 澳大利亚超级联赛
+   ts  2队比赛的信息
+   mc
+  id  赛事 id
+    bt 开赛 时间 毫秒时间戳
+    ms
+    fid
+  fmt
+  ne
+  vs
+  as 动画直播
+  sid
+  smt
+  ty
+  nm 比赛的名字纽卡斯尔喷气机 vs. 布里斯班狮吼
+
+
+getMatchDetail  --->
