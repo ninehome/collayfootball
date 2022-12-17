@@ -2,7 +2,8 @@
 //爬虫 分析 过程
 http://www.randyfield.cn/post/2021-02-18-go-spider/
 
-
+//go 爬虫大佬文章
+https://blog.csdn.net/weixin_34026997/article/details/112077398
 
 发现武器更强大了：go语言，goquery，colly，chromedp，webloop等，强大的语言及工具使爬虫更简单、更高效。
 
