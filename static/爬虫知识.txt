@@ -19,8 +19,15 @@ Golang 网络爬虫框架gocolly/colly 四
 https://blog.51cto.com/u_15187242/2749307
 
 
+go get -u github.com/chromedp/chromedp
 
 
 
 //爬斗鱼 数据
 https://github.com/cj1128
+
+GOLANG爬虫终极杀器——CHROMEDP让你成为二维码登陆终结者（教程）
+
+
+//go+goquery+chromedp爬虫实现对网页数据抓取
+https://blog.csdn.net/zmsister/article/details/122859534
