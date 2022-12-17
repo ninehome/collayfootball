@@ -31,3 +31,11 @@ GOLANG爬虫终极杀器——CHROMEDP让你成为二维码登陆终结者（教
 
 //go+goquery+chromedp爬虫实现对网页数据抓取
 https://blog.csdn.net/zmsister/article/details/122859534
+
+
+//爬虫 课程
+http://www.jtthink.com/course/99
+
+
+//台湾妹子
+su5201314ya

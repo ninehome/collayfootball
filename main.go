@@ -53,7 +53,12 @@ func main() {
 		network.Enable(),
 		chromedp.Navigate(`https://test.f66b88sport.com/pc/index.html#/`),
 		chromedp.WaitVisible(`body`, chromedp.BySearch),
-		chromedp.Sleep(6*time.Second),
+		//chromedp.ActionFunc(func(ctx context.Context) error {
+		//   ctx.
+		//	_, err := domain.SomeAction().Do(ctx)
+		//	return err
+		//}),
+
 	)
 
 	time.Sleep(30 * time.Second)
@@ -71,10 +76,11 @@ func listenForNetworkEvent(ctx context.Context) {
 			if len(resp.Headers) != 0 {
 				// log.Printf("received headers: %s", resp.Headers)
 
-				//if resp.URL == "https://sportapi.fastball2.com/v1/match/getList" {
-				//	fmt.Println("received headers: %s", resp.URL)
-				//	fmt.Println(resp)
-				//}
+				if resp.URL == "https://sportapi.fastball2.com/v1/match/getList" {
+					fmt.Println("received headers: %s", resp.URL)
+					//fmt.Println("received headers: %s", resp.RequestHeaders.)
+					fmt.Println(resp)
+				}
 
 				if strings.Index(resp.URL, ".ts") != -1 {
 					log.Printf("received headers: %s", resp.URL)
@@ -82,6 +88,15 @@ func listenForNetworkEvent(ctx context.Context) {
 				}
 			}
 
+		case *network.EventRequestWillBeSent:
+			bytes, e := ev.MarshalJSON()
+
+			if e != nil {
+
+			}
+			fmt.Println(11111111111111111)
+			fmt.Println(string(bytes))
+			fmt.Println("******************")
 		}
 		// other needed network Event
 	})
